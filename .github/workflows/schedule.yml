@@ -8,6 +8,8 @@ on:
 jobs:
   attendance:
     uses: AEtherside/skland-daily-attendance/.github/workflows/schedule.yml@main
+    with:
+      repository: AEtherside/skland-daily-attendance
     secrets:
       SKLAND_TOKENS: ${{ secrets.SKLAND_TOKENS }}
       SKLAND_NOTIFICATION_URLS: ${{ secrets.SKLAND_NOTIFICATION_URLS }}
